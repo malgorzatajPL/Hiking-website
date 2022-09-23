@@ -1,7 +1,8 @@
-import React, { ReactNode } from 'react';
-import Link from 'next/link';
 import Head from 'next/head';
-import { Header, MenuItem, Nav } from './Nav.style';
+import Image from 'next/image';
+import Link from 'next/link';
+import { ReactNode } from 'react';
+import { Header, MenuItem, Nav } from './Header/Nav.style';
 
 type Props = {
   children?: ReactNode;
@@ -16,19 +17,18 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
     </Head>
     <Header>
+      <Image src='/Logo.png' width={91} height={94} />
+
       <Nav>
         <Link href='/'>
           <MenuItem>Home</MenuItem>
-        </Link>{' '}
-        |{' '}
+        </Link>
         <Link href='/about'>
-          <a>About</a>
-        </Link>{' '}
-        |{' '}
+          <MenuItem>About</MenuItem>
+        </Link>
         <Link href='/users'>
-          <a>Users List</a>
-        </Link>{' '}
-        | <a href='/api/users'>Users API</a>
+          <MenuItem>Users List</MenuItem>
+        </Link>
       </Nav>
     </Header>
     {children}
