@@ -33,17 +33,47 @@ export const HomePageStyle = styled.div`
 `;
 export const Container = styled.div`
   max-width: 45vw;
-  padding: 50px;
+  padding: 70px;
   display: flex;
   flex-direction: column;
 `;
-export const Title = styled.div`
+export const Title = styled.h1`
   color: ${theme.palette.primary.secondary};
   font-family: ${theme.fontFamily.main};
   font-size: ${fontSize(92)};
   font-weight: 800;
   filter: drop-shadow(2.575px -4.286px 2.5px rgba(84, 82, 79, 0.22));
 `;
-export const SubTitle = styled.div``;
-export const ButtonReadMore = styled.div``;
-export const Content = styled.div``;
+export const SubTitle = styled.span`
+  color: ${theme.palette.primary.main};
+  font-family: ${theme.fontFamily.main};
+  font-size: ${fontSize(25)};
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 5px;
+  padding: 20px 0;
+`;
+export const ButtonReadMore = styled.button`
+  font-size: ${fontSize(25)};
+  font-family: ${theme.fontFamily.main};
+  font-weight: 800;
+  text-align: center;
+  border-radius: 21px;
+  width: 218px;
+  height: 47px;
+  background-color: ${theme.palette.common.white};
+  color: ${theme.palette.secondary.main};
+  border: none;
+  text-transform: uppercase;
+  margin-top: 40px;
+`;
+export const Content = styled.div`
+  color: ${theme.palette.primary.main};
+  font-style: italic;
+  font-weight: 400;
+  font-size: ${fontSize(21)};
+  font-family: ${theme.fontFamily.main};
+  line-height: 1.4;
+  max-width: 80%;
+  margin: 20px 0;
+`;

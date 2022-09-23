@@ -25,10 +25,13 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
           <MenuItem>Home</MenuItem>
         </Link>
         <Link href='/about'>
-          <MenuItem>About</MenuItem>
+          <MenuItem>Menu</MenuItem>
         </Link>
         <Link href='/users'>
-          <MenuItem>Users List</MenuItem>
+          <MenuItem>Our story</MenuItem>
+        </Link>
+        <Link href='/users'>
+          <MenuItem>Contact us</MenuItem>
         </Link>
       </Nav>
     </Header>

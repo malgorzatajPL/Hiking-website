@@ -11,7 +11,7 @@ export const theme: ThemeTypes = {
       secondary: '#deb37e',
     },
     secondary: {
-      main: '  ',
+      main: '#776c64',
       secondary: '',
     },
   },
