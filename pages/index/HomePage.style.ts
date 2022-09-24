@@ -91,10 +91,10 @@ export const Main = styled.div`
     content: ' ';
     background-image: url('ShadowMain.png');
     position: absolute;
-    left: 0;
-    top: 0px;
+    left: -350px;
+    top: 480px;
     height: 100%;
-    width: 100%;
+    width: 867px;
     z-index: 10;
   }
 `;
