@@ -5,10 +5,12 @@ export const theme: ThemeTypes = {
     common: {
       black: '#000',
       white: '#ffffff',
+      lightGrey: '#7f7770',
     },
     primary: {
       main: '#54524f',
       secondary: '#deb37e',
+      third: '#e2a355',
     },
     secondary: {
       main: '#776c64',

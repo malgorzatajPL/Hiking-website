@@ -1,8 +1,16 @@
 import styled from 'styled-components';
 import { fontSize, theme } from '../../styling/theme';
 
-export const HomePageStyle = styled.div`
-  background: url('i2.png');
+export const HomePageStyle = styled.div``;
+export const Box = styled.div`
+  max-width: 45vw;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Container = styled.div`
+  background: url('Hero.png');
   height: 100vh;
   position: relative;
   background-position: center;
@@ -31,12 +39,7 @@ export const HomePageStyle = styled.div`
     z-index: 10;
   }
 `;
-export const Container = styled.div`
-  max-width: 45vw;
-  padding: 70px;
-  display: flex;
-  flex-direction: column;
-`;
+
 export const Title = styled.h1`
   color: ${theme.palette.primary.secondary};
   font-family: ${theme.fontFamily.main};
@@ -44,6 +47,7 @@ export const Title = styled.h1`
   font-weight: 800;
   filter: drop-shadow(2.575px -4.286px 2.5px rgba(84, 82, 79, 0.22));
 `;
+
 export const SubTitle = styled.span`
   color: ${theme.palette.primary.main};
   font-family: ${theme.fontFamily.main};
@@ -53,6 +57,7 @@ export const SubTitle = styled.span`
   letter-spacing: 5px;
   padding: 20px 0;
 `;
+
 export const ButtonReadMore = styled.button`
   font-size: ${fontSize(25)};
   font-family: ${theme.fontFamily.main};
@@ -67,6 +72,7 @@ export const ButtonReadMore = styled.button`
   text-transform: uppercase;
   margin-top: 40px;
 `;
+
 export const Content = styled.div`
   color: ${theme.palette.primary.main};
   font-style: italic;
@@ -77,3 +83,44 @@ export const Content = styled.div`
   max-width: 80%;
   margin: 20px 0;
 `;
+export const Main = styled.div`
+  text-align: center;
+  position: relative;
+  padding-bottom: 100px;
+  :before {
+    content: ' ';
+    background-image: url('ShadowMain.png');
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+  }
+`;
+
+export const Header2 = styled.h2`
+  color: ${theme.palette.primary.third};
+  font-weight: 800;
+  font-size: ${fontSize(63)};
+  font-family: ${theme.fontFamily.main};
+  text-transform: uppercase;
+  margin: 40px 0;
+`;
+
+export const SubtitleMain = styled.p`
+  color: ${theme.palette.common.lightGrey};
+  font-weight: 400;
+  font-size: ${fontSize(27)};
+  font-family: ${theme.fontFamily.main};
+  margin: 20px auto;
+  max-width: 50%;
+  line-height: 1.4;
+`;
+
+export const Cards = styled.div`
+  display: flex;
+  justify-content: space-around;
+`;
+
+export const DiscountStyle = styled.div``;
