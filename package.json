@@ -1,11 +1,11 @@
 {
   "private": true,
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
+  "script":
+{
+   "dev": "npm run dev", 
     "start": "next start",
-    "type-check": "tsc"
-  },
+    "lint": "next lint"
+},
   "dependencies": {
     "next": "latest",
     "react": "^17.0.2",
