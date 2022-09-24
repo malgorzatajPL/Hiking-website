@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiscountStyle } from './HomePage.style';
+import { DiscountStyle } from '../../components/HomePage.style';
 
 export default function Discount() {
   return (

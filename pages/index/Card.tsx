@@ -1,7 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
 import { CardProps } from '../../interfaces/card';
-import { CardStyle, ContentCard, ImgCard, TitleCard } from './Card.style';
+import {
+  CardStyle,
+  ContentCard,
+  ImgCard,
+  TitleCard,
+} from '../../components/Card.style';
 
 export default function Card({ imgCard, titleCard, contentCard }: CardProps) {
   return (
