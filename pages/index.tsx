@@ -15,6 +15,7 @@ import {
   Main,
   Cards,
 } from '../components/HomePage.style';
+import { theme } from '../styling/theme';
 
 const IndexPage = () => (
   <Layout>
@@ -54,7 +55,19 @@ const IndexPage = () => (
           />
         </Cards>
       </Main>
-      <Discount></Discount>
+      <Discount
+        background={theme.palette.common.lightGrey}
+        imgDiscount='/Card2.png'
+        titleDiscount='Discount up to 
+        50% All Excursions'
+        contentDiscount='Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+      />
+      <Discount
+        background={theme.palette.primary.secondary}
+        imgDiscount='/ImgDiscount.png'
+        titleDiscount='Lorem ipsum'
+        contentDiscount='Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+      />
     </HomePageStyle>
   </Layout>
 );
