@@ -7,7 +7,6 @@ import {
   TitleDiscount,
 } from '../../components/Discount.style';
 import { DiscountProps } from '../../interfaces/discount';
-import { theme } from '../../styling/theme';
 
 export default function Discount({
   imgDiscount,
