@@ -18,6 +18,9 @@ export const ContainerHeader = styled.div`
 `;
 export const Navigation = styled.div`
   display: flex;
+  a {
+    text-decoration: none;
+  }
 `;
 export const Menu = styled.div`
   display: flex;

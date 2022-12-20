@@ -12,7 +12,7 @@ export default function Card({ imgCard, titleCard, contentCard }: CardProps) {
   return (
     <CardStyle>
       <ImgCard>
-        <Image src={imgCard} width={310} height={310} />
+        <Image alt='image card' src={imgCard} width={310} height={310} />
       </ImgCard>
       <TitleCard>{titleCard}</TitleCard>
       <ContentCard>{contentCard}</ContentCard>
