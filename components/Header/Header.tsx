@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <HeaderStyle>
       <ContainerHeader>
-        <Image src='/Logo.png' width={91} height={94} />
+        <Image alt='logo' src='/Logo.png' width={91} height={94} />
         <Nav />
       </ContainerHeader>
     </HeaderStyle>

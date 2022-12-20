@@ -17,7 +17,12 @@ export default function Discount({
   return (
     <DiscountStyle background={background}>
       <ImgDiscount>
-        <Image src={imgDiscount} width={610} height={610} />
+        <Image
+          alt='image discount'
+          src={imgDiscount}
+          width={610}
+          height={610}
+        />
       </ImgDiscount>
       <ContainerDiscount>
         <TitleDiscount>{titleDiscount}</TitleDiscount>
