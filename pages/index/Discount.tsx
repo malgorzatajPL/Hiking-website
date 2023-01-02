@@ -5,7 +5,7 @@ import {
   DiscountStyle,
   ImgDiscount,
   TitleDiscount,
-} from '../../components/Discount.style';
+} from './Discount.style';
 import { DiscountProps } from '../../interfaces/discount';
 
 export default function Discount({

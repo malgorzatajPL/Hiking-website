@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fontSize, theme } from '../styling/theme';
+import { fontSize, theme } from '../../styling/theme';
 
 export const HomePageStyle = styled.div``;
 export const Box = styled.div`
