@@ -14,7 +14,7 @@ import {
   Title,
   Main,
   Cards,
-} from '../components/Index/HomePage.style';
+} from './index/HomePage.style';
 import { theme } from '../styling/theme';
 
 const IndexPage = () => (
