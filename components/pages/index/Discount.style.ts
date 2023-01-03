@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fontSize, theme } from '../../styling/theme';
+import { fontSize, theme } from '../../../styling/theme';
 
 export const DiscountStyle = styled.div<{ background: string }>`
   background-color: ${(props) => props.background};
