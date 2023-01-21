@@ -1,6 +1,5 @@
-import { useState } from 'react';
-import { MenuItem, Navigation } from './Nav.style';
 import Link from 'next/link';
+import { MenuItem, Navigation } from './Nav.style';
 
 export default function Nav() {
   return (
