@@ -5,17 +5,17 @@ import { device } from '../../utils/MediaQuery';
 export const HeaderStyle = styled.div`
   position: fixed;
   width: 100vw;
-  z-index: 100;
+  z-index: 10;
 `;
 
 export const ContainerHeader = styled.div`
+  position: flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
   background: ${theme.palette.common.white};
   box-shadow: 5px 4px 4px ${theme.palette.common.white} inset;
-  pointer-events: none;
 `;
 export const Navigation = styled.div`
   display: flex;
@@ -35,7 +35,7 @@ export const MenuItem = styled.div`
 `;
 export const ButtonBox = styled.div`
   @media ${device.mobileS} {
-    position: absolute;
+    display: block;
     right: 30px;
     z-index: 101;
     top: 28px;
@@ -48,7 +48,7 @@ export const Menu = styled.div<{ isOpen: boolean }>`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: ${theme.palette.primary.main};
+  background: ${theme.palette.common.white};
   height: 115vh;
   width: ${(props) => (props.isOpen ? '100%' : '0')};
   opacity: ${(props) => (props.isOpen ? '1' : '0')};

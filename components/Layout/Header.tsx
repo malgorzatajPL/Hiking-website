@@ -11,7 +11,8 @@ import {
 } from './Nav.style';
 import { useState } from 'react';
 import useMediaQuery from '../../hooks/useMediaQuery';
-const Burger = ({
+
+export const Burger = ({
   setOpen,
   open,
 }: {
@@ -37,18 +38,21 @@ export default function Header() {
   return (
     <HeaderStyle>
       <ContainerHeader>
-        <Image alt='logo' src='/Logo.png' width={91} height={94} />
+        {/* <Image alt='logo' src='/Logo.png' width={91} height={94} /> */}
         {isLaptop && <Nav />}
-        <ButtonBox>
-          <Burger open={open} setOpen={setOpen} />
-        </ButtonBox>
-
-        <Menu isOpen={open}>
-          <MenuUl>
-            <Image alt='logo' src='/Logo.png' width={91} height={94} />
-            <Nav />
-          </MenuUl>
-        </Menu>
+        {!isLaptop && (
+          <ButtonBox>
+            <Burger open={open} setOpen={setOpen} />
+          </ButtonBox>
+        )}
+        <>
+          <Menu isOpen={open}>
+            <MenuUl>
+              <Image alt='logo' src='/Logo.png' width={91} height={94} />
+              <Nav />
+            </MenuUl>
+          </Menu>
+        </>
       </ContainerHeader>
     </HeaderStyle>
   );

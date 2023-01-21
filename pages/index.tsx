@@ -19,7 +19,7 @@ import { theme } from '../styling/theme';
 
 const IndexPage = () => (
   <Layout>
-    <HomePageStyle>
+    {/* <HomePageStyle>
       <Container>
         <Box>
           <Title>IT´S TIME FOR HIKING</Title>
@@ -68,7 +68,7 @@ const IndexPage = () => (
         titleDiscount='Lorem ipsum'
         contentDiscount='Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
       />
-    </HomePageStyle>
+    </HomePageStyle> */}
   </Layout>
 );
 
